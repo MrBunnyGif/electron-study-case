@@ -1,0 +1,64 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+
+    <style>
+        .pai{
+  position: relative;
+}
+span{
+  cursor: pointer;
+  transition-duration: .3s
+}
+span:hover{
+  color: #333
+}
+div:hover ul{
+  transform: translate(0%);
+}
+ul{
+  transform: translate(-150%);
+  position: absolute;
+  width: 50px;
+  top: 0px;
+  padding-top: 10px;
+  transition-duration: .3s
+}
+li{
+  cursor: pointer;
+  transition-duration: .3s
+}
+li:hover{
+  background: #999
+}
+input:checked + ul {
+    transform: translate(0%);
+  color: #444;
+}
+input{
+  display: none;
+}
+label{
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <div class="pai">
+        <label for="menu">hoover here</label>
+       <input id="menu" type="checkbox">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </button>
+  </body>
+</html>
